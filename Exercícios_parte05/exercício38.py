@@ -1,7 +1,10 @@
 
-dia = int(input('Digite um dia do mês: \n'))
-mes = int(input('Digite o número do mês: \n'))
-ano = int(input('Digite o ano: \n'))
+data = input('Digite uma data de nascimento (dd/mm/aaaa): \n')
+
+dia, mes, ano = data.split('/')
+dia = int(dia)
+mes = int(mes)
+ano = int(ano)
 validames = 0
 validadia = 0
 
